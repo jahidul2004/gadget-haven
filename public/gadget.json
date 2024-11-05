@@ -1,0 +1,257 @@
+[
+    {
+        "product_id": 1,
+        "title": "Smartphone XYZ Pro",
+        "image": "https://i.ibb.co.com/rbC8bpW/apple-brand-macbook-photo-20.png",
+        "category": "Phone",
+        "price": 699.99,
+        "description": "A powerful smartphone with advanced features and an ultra-clear display.",
+        "specification": [
+            "6.7-inch AMOLED display",
+            "128GB storage",
+            "12GB RAM",
+            "Triple-lens rear camera (108MP + 12MP + 8MP)",
+            "5000mAh battery"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": 2,
+        "title": "Phone ABC Lite",
+        "image": "https://i.ibb.co.com/rbC8bpW/apple-brand-macbook-photo-20.png",
+        "category": "Phone",
+        "price": 399.99,
+        "description": "Affordable smartphone with all the necessary features for everyday use.",
+        "specification": [
+            "6.1-inch IPS display",
+            "64GB storage",
+            "4GB RAM",
+            "Dual-lens rear camera (48MP + 5MP)",
+            "4000mAh battery"
+        ],
+        "availability": true,
+        "rating": 4.2
+    },
+    {
+        "product_id": 3,
+        "title": "Smartphone Ultra 5G",
+        "image": "https://i.ibb.co.com/rbC8bpW/apple-brand-macbook-photo-20.png",
+        "category": "Phone",
+        "price": 899.99,
+        "description": "High-end smartphone with 5G connectivity and advanced performance.",
+        "specification": [
+            "6.9-inch AMOLED display",
+            "256GB storage",
+            "16GB RAM",
+            "Quad-lens rear camera (108MP + 12MP + 10MP + 8MP)",
+            "4500mAh battery"
+        ],
+        "availability": false,
+        "rating": 4.8
+    },
+    {
+        "product_id": 4,
+        "title": "Phone M Series",
+        "image": "https://i.ibb.co.com/rbC8bpW/apple-brand-macbook-photo-20.png",
+        "category": "Phone",
+        "price": 299.99,
+        "description": "Compact smartphone with great features for budget-conscious users.",
+        "specification": [
+            "5.8-inch LCD display",
+            "32GB storage",
+            "3GB RAM",
+            "Single-lens rear camera (13MP)",
+            "3000mAh battery"
+        ],
+        "availability": true,
+        "rating": 3.9
+    },
+    {
+        "product_id": 5,
+        "title": "Smartphone A1 Pro",
+        "image": "https://i.ibb.co.com/rbC8bpW/apple-brand-macbook-photo-20.png",
+        "category": "Phone",
+        "price": 749.99,
+        "description": "A mid-range phone with a strong performance and stunning display.",
+        "specification": [
+            "6.5-inch OLED display",
+            "128GB storage",
+            "8GB RAM",
+            "Triple-lens rear camera (64MP + 8MP + 5MP)",
+            "4200mAh battery"
+        ],
+        "availability": true,
+        "rating": 4.4
+    },
+    {
+        "product_id": 6,
+        "title": "Phone Y10 Max",
+        "image": "https://i.ibb.co.com/rbC8bpW/apple-brand-macbook-photo-20.png",
+        "category": "Phone",
+        "price": 649.99,
+        "description": "A large-screen phone perfect for media consumption and gaming.",
+        "specification": [
+            "7.0-inch LCD display",
+            "128GB storage",
+            "6GB RAM",
+            "Dual-lens rear camera (48MP + 12MP)",
+            "5000mAh battery"
+        ],
+        "availability": false,
+        "rating": 4.0
+    },
+    {
+        "product_id": 7,
+        "title": "MacBook Air 2023",
+        "image": "https://i.ibb.co.com/rbC8bpW/apple-brand-macbook-photo-20.png",
+        "category": "Macbook",
+        "price": 999.99,
+        "description": "Lightweight and powerful MacBook Air with M1 chip, perfect for everyday tasks.",
+        "specification": [
+            "13.3-inch Retina display",
+            "256GB SSD storage",
+            "8GB RAM",
+            "M1 chip",
+            "Up to 18 hours of battery life"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": 8,
+        "title": "MacBook Pro 14",
+        "image": "https://i.ibb.co.com/rbC8bpW/apple-brand-macbook-photo-20.png",
+        "category": "Macbook",
+        "price": 1999.99,
+        "description": "High-performance MacBook Pro with an M1 Pro chip and advanced graphics.",
+        "specification": [
+            "14-inch Liquid Retina XDR display",
+            "512GB SSD storage",
+            "16GB RAM",
+            "M1 Pro chip",
+            "Up to 17 hours of battery life"
+        ],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": 9,
+        "title": "MacBook Pro 16",
+        "image": "https://i.ibb.co.com/rbC8bpW/apple-brand-macbook-photo-20.png",
+        "category": "Macbook",
+        "price": 2499.99,
+        "description": "Powerful MacBook Pro for professional users with high-end specifications.",
+        "specification": [
+            "16-inch Liquid Retina XDR display",
+            "1TB SSD storage",
+            "32GB RAM",
+            "M1 Max chip",
+            "Up to 21 hours of battery life"
+        ],
+        "availability": false,
+        "rating": 5.0
+    },
+    {
+        "product_id": 10,
+        "title": "MacBook Air 2020",
+        "image": "https://i.ibb.co.com/rbC8bpW/apple-brand-macbook-photo-20.png",
+        "category": "Macbook",
+        "price": 899.99,
+        "description": "Affordable MacBook Air model with good performance for basic tasks.",
+        "specification": [
+            "13.3-inch Retina display",
+            "128GB SSD storage",
+            "8GB RAM",
+            "Intel Core i3 processor",
+            "Up to 11 hours of battery life"
+        ],
+        "availability": true,
+        "rating": 4.3
+    },
+    {
+        "product_id": 11,
+        "title": "Laptop UltraBook Z",
+        "image": "https://i.ibb.co.com/rbC8bpW/apple-brand-macbook-photo-20.png",
+        "category": "Laptop",
+        "price": 1099.99,
+        "description": "Slim and powerful ultrabook for professionals with great battery life.",
+        "specification": [
+            "15.6-inch Full HD display",
+            "512GB SSD storage",
+            "16GB RAM",
+            "Intel Core i7 processor",
+            "Up to 12 hours of battery life"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": 12,
+        "title": "Gaming Laptop G5",
+        "image": "https://i.ibb.co.com/rbC8bpW/apple-brand-macbook-photo-20.png",
+        "category": "Laptop",
+        "price": 1599.99,
+        "description": "High-performance gaming laptop with powerful graphics card.",
+        "specification": [
+            "17.3-inch QHD display",
+            "1TB SSD storage",
+            "32GB RAM",
+            "NVIDIA RTX 3060 GPU",
+            "RGB backlit keyboard"
+        ],
+        "availability": false,
+        "rating": 4.8
+    },
+    {
+        "product_id": 13,
+        "title": "Business Laptop B Series",
+        "image": "https://i.ibb.co.com/rbC8bpW/apple-brand-macbook-photo-20.png",
+        "category": "Laptop",
+        "price": 849.99,
+        "description": "Reliable business laptop with solid performance and battery life.",
+        "specification": [
+            "14-inch Full HD display",
+            "256GB SSD storage",
+            "8GB RAM",
+            "Intel Core i5 processor",
+            "Up to 10 hours of battery life"
+        ],
+        "availability": true,
+        "rating": 4.2
+    },
+    {
+        "product_id": 14,
+        "title": "Convertible Laptop X2",
+        "image": "https://i.ibb.co.com/rbC8bpW/apple-brand-macbook-photo-20.png",
+        "category": "Laptop",
+        "price": 1299.99,
+        "description": "Versatile 2-in-1 laptop that functions as both a laptop and tablet.",
+        "specification": [
+            "13.5-inch touchscreen display",
+            "512GB SSD storage",
+            "16GB RAM",
+            "Intel Core i7 processor",
+            "Stylus support"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": 15,
+        "title": "Laptop UltraBook Y",
+        "image": "https://i.ibb.co.com/rbC8bpW/apple-brand-macbook-photo-20.png",
+        "category": "Laptop",
+        "price": 1199.99,
+        "description": "High-quality ultrabook with fast performance and long battery life.",
+        "specification": [
+            "13.3-inch Full HD display",
+            "256GB SSD storage",
+            "8GB RAM",
+            "Intel Core i5 processor",
+            "Up to 15 hours of battery life"
+        ],
+        "availability": false,
+        "rating": 4.6
+    }
+]

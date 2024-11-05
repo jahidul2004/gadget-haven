@@ -1,6 +1,8 @@
+import { Link, NavLink } from "react-router-dom";
+
 const NavBar = () => {
     return (
-        <div className="navbar bg-transparent text-white px-5">
+        <div className="navbar bg-[#9538e1] text-white px-5">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div
@@ -28,13 +30,13 @@ const NavBar = () => {
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-black"
                     >
                         <li>
-                            <a>Home</a>
+                            <NavLink to='/home'>Home</NavLink>
                         </li>
                         <li>
-                            <a>Statistics</a>
+                            <NavLink to='/statistics'>Statistics</NavLink>
                         </li>
                         <li>
-                            <a>Dashboard</a>
+                            <NavLink to='/dashboard'>Dashboard</NavLink>
                         </li>
                     </ul>
                 </div>
@@ -43,13 +45,13 @@ const NavBar = () => {
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     <li>
-                        <a>Home</a>
+                        <NavLink to='/'>Home</NavLink>
                     </li>
                     <li>
-                        <a>Statistics</a>
+                        <NavLink to='/statistics'>Statistics</NavLink>
                     </li>
                     <li>
-                        <a>Dashboard</a>
+                        <NavLink to='/dashboard'>Dashboard</NavLink>
                     </li>
                 </ul>
             </div>
