@@ -8,6 +8,7 @@ import {
 import MainLayout from './components/MainLayout/MainLayout';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
+import CardDetails from './components/CardDetails/CardDetails';
 
 const router = createBrowserRouter([
   {
@@ -25,7 +26,12 @@ const router = createBrowserRouter([
       {
         path:'/dashboard',
         element:<h1>This is dashboard</h1>
-      }
+      },
+      {
+        path: "/product/:id",
+        element: <CardDetails />,
+        loader: () => fetch("public/gadget.json")
+      },
     ]
   },
 ]);

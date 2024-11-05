@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { NavLink, useLoaderData } from "react-router-dom";
 import Home from "../Home/Home";
 
 const Header = () => {
@@ -18,9 +18,9 @@ const Header = () => {
                         From smart devices to the coolest accessories, we have
                         it all!
                     </p>
-                    <button className="btn bg-white text-[#9538e1] rounded-3xl">
+                    <NavLink to='/dashboard' className="btn bg-white text-[#9538e1] rounded-3xl">
                         Shop Now
-                    </button>
+                    </NavLink>
                 </div>
                 {/* Heading text end */}
                 <div className="w-[60%] h-[300px] absolute top-[125%] bottom-[50%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 m-auto border rounded-lg border-white">
