@@ -1,30 +1,39 @@
-import { space } from "postcss/lib/list";
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { setCartData, setWishData } from "../../LocalData/LocalData";
 
 const CardDetails = () => {
     const allData = useLoaderData();
+    const { id } = useParams();
 
     const [data, setData] = useState([]);
+    const [isInWishList, setIsInWishList] = useState(false);
 
     useEffect(() => {
         const targetData = allData.find((item) => item.product_id == id);
         setData(targetData);
-    }, []);
 
-    const totalStars = 5;
-    const hover = parseInt(data.rating);
-    const rating = 0;
-    const { id } = useParams();
+        const storedWishList =
+            JSON.parse(localStorage.getItem("wishlist")) || [];
+        const isAlreadyInWishList = storedWishList.some(
+            (item) => item.product_id === id
+        );
+        setIsInWishList(isAlreadyInWishList);
+    }, [id, allData]);
 
+    const handleWish = () => {
+        if (!isInWishList) {
+            setWishData(data);
+            setIsInWishList(true);
+        } else {
+            setIsInWishList(false);
+        }
+    };
 
-    const handleWish = () =>{
-        setWishData(data);
-    }
-    const handleCart = () =>{
+    const handleCart = () => {
         setCartData(data);
-    }
+    };
+
     return (
         <div>
             <div className="bg-[#9538e1] p-10 text-center text-white pb-72 relative">
@@ -65,18 +74,16 @@ const CardDetails = () => {
                     <div>
                         <p className="font-bold">Rating</p>
                         <div className="flex items-center space-x-2">
-                            {[...Array(totalStars)].map((_, index) => {
+                            {[...Array(5)].map((_, index) => {
                                 const starValue = index + 1;
                                 return (
                                     <span
                                         key={index}
                                         className={`cursor-pointer text-2xl ${
-                                            starValue <= (hover || rating)
+                                            starValue <= (data.rating || 0)
                                                 ? "text-yellow-500"
                                                 : "text-gray-300"
                                         }`}
-                                        onMouseEnter={() => setHover(starValue)}
-                                        onMouseLeave={() => setHover(0)}
                                     >
                                         ★
                                     </span>
@@ -86,12 +93,27 @@ const CardDetails = () => {
                         </div>
                     </div>
                     <div className="flex gap-2">
-                        <button onClick={handleCart} className="btn rounded-3xl bg-[#9538e1] text-white">
+                        <button
+                            onClick={handleCart}
+                            className="btn rounded-3xl bg-[#9538e1] text-white"
+                        >
                             Add to Cart{" "}
                             <i className="fa-solid fa-cart-shopping"></i>
                         </button>
-                        <button onClick={handleWish} className="btn rounded-full text-[#9538e1]">
-                            <i class="fa-regular fa-heart text-lg"></i>
+                        <button
+                            onClick={handleWish}
+                            className={`btn rounded-full ${
+                                isInWishList
+                                    ? "bg-[#9538e1] text-white"
+                                    : "text-[#9538e1]"
+                            } `}
+                            disabled={isInWishList}
+                        >
+                            <i
+                                className={`fa-regular fa-heart text-lg ${
+                                    isInWishList ? "text-white" : ""
+                                }`}
+                            ></i>
                         </button>
                     </div>
                 </div>

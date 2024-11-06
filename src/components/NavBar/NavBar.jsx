@@ -2,16 +2,17 @@ import { Link, NavLink } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
 const NavBar = () => {
-
     const location = useLocation();
 
     const getNavbarColor = () => {
-      if (location.pathname === '/') return 'bg-[#9538e1] text-white';
-      if (location.pathname === '/statistics') return 'bg-white text-black';
-      if (location.pathname === '/dashboard') return 'bg-white text-black';
-      if (location.pathname === '/dashboard/cart') return 'bg-white text-black';
-      if (location.pathname === '/dashboard/wishlist') return 'bg-white text-black';
-      return 'bg-gray-500';
+        if (location.pathname === "/") return "bg-[#9538e1] text-white";
+        if (location.pathname === "/statistics") return "bg-white text-black";
+        if (location.pathname === "/dashboard") return "bg-white text-black";
+        if (location.pathname === "/dashboard/cart")
+            return "bg-white text-black";
+        if (location.pathname === "/dashboard/wishlist")
+            return "bg-white text-black";
+        return "bg-white text-black";
     };
 
     return (
