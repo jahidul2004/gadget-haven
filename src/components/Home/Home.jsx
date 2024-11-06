@@ -37,7 +37,7 @@ const Home = () => {
             <h1 className="text-center text-4xl font-bold">
                 Explore Cutting-Edge Gadgets
             </h1>
-            <div className="grid mt-5 grid-cols-8 gap-4">
+            <div className="grid mt-5 grid-cols-1 md:grid-cols-8 lg:grid-cols-8 gap-4">
                 <div className="col-span-2 rounded-lg">
                     <div className="bg-[#f7f7f7] p-5 flex flex-col gap-4 rounded-lg">
                         <span
@@ -82,7 +82,7 @@ const Home = () => {
                         </span>
                     </div>
                 </div>
-                <div className="col-span-6 grid grid-cols-3 gap-6">
+                <div className="col-span-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {data.map((item) => (
                         <Card key={item.product_id} data={item} />
                     ))}

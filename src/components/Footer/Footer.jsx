@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <div className="mt-40 bg-[#f7f7f7]">
+        <div className="mt-80 md:mt-40 bg-[#f7f7f7]">
             {/* Footer area start from here */}
             <footer className="footer footer-center text-black p-10">
                 <aside>

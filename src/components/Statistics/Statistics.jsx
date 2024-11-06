@@ -24,7 +24,7 @@ const Statistics = () => {
                 <p className="font-semibold">Explore the latest gadgets that will take your experience to the next level. From smart <br /> devices to the coolest accessories, we have it all!</p>
             </div>
             <div className="flex justify-center items-center my-10">
-                <BarChart width={1200} height={400} data={data}>
+                <BarChart className="w-full" width={1200}  height={400} data={data}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="title" />
                     <YAxis />

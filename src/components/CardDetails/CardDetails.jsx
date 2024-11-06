@@ -45,11 +45,11 @@ const CardDetails = () => {
                 </p>
             </div>
 
-            <div className="w-[60%] min-h-[420px] absolute top-[80%] bottom-[1%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 m-auto shadow-lg rounded-lg bg-white p-4 flex gap-4">
-                <div className="w-[35%] bg-[#f1f2f2] h-full rounded-lg">
+            <div className="w-[90%] md:w-[60%] min-h-max absolute top-[110%] md:top-[80%] bottom-[1%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 m-auto shadow-lg rounded-lg bg-white p-4 flex flex-col md:flex-row gap-4">
+                <div className="w-full md:w-[35%] bg-[#f1f2f2] h-[200px] md:h-full rounded-lg">
                     <img className="w-full h-full" src={data.image} alt="" />
                 </div>
-                <div className="w-[65%]">
+                <div className="w-full md:w-[65%]">
                     <h1 className="text-3xl font-bold">{data.title}</h1>
                     <p className="mb-3 font-semibold">Price:{data.price}$</p>
                     <span
@@ -62,7 +62,7 @@ const CardDetails = () => {
                         data.availability ? "In Stock" : "Out of Stock"
                     }`}</span>
                     <p className="my-2">{data.description}</p>
-                    <div>
+                    <div className="hidden md:block">
                         <p className="font-bold">Specification</p>
                         <ol className="list-decimal list-inside">
                             {data.specification &&
