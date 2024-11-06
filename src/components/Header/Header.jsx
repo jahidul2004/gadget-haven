@@ -27,7 +27,7 @@ const Header = () => {
                     <div className="w-full h-full p-4">
                         <img
                             className="w-full h-full rounded-lg"
-                            src="src/assets/banner.jpg"
+                            src="https://i.ibb.co.com/CHp2Hdx/banner.jpg"
                             alt=""
                         />
                     </div>

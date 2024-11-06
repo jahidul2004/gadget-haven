@@ -24,8 +24,12 @@ const router = createBrowserRouter([
             },
             {
                 path: "/statistics",
-                element: <Statistics></Statistics>,
-                loader: () => fetch("public/gadget.json"),
+                element: <Statistics />,
+                loader: async () => {
+                    const response = await fetch("/gadget.json");
+                    const data = await response.json();
+                    return Array.isArray(data) ? data : [];
+                },
             },
             {
                 path: "/dashboard",
