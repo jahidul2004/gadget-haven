@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import DashCard from "../DashCard/DashCard";
+import { notify } from "../../LocalData/LocalData";
 
 const Cart = () => {
     const [cartData, setCartData] = useState([]);
@@ -35,7 +36,7 @@ const Cart = () => {
 
     const handlePurchase = () => {
         if (cartData.length === 0) {
-            alert("Your cart is empty!");
+            notify("Cart is empty!");
             return;
         }
         setIsModalOpen(true);
