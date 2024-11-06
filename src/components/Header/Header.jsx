@@ -2,7 +2,6 @@ import { NavLink, useLoaderData } from "react-router-dom";
 import Home from "../Home/Home";
 
 const Header = () => {
-    const data = useLoaderData();
     return (
         <div>
             <div className="bg-[#9538e1] pb-48 relative mt-0 border border-[#9538e1]">
