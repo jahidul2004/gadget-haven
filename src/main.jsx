@@ -14,6 +14,7 @@ import ErrorPage from "./components/ErrorPage/ErrorPage";
 import { HelmetProvider } from "react-helmet-async";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import Faq from "./components/Faq/Faq";
 
 const router = createBrowserRouter([
     {
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
                 element: <CardDetails />,
                 loader: () => fetch("/gadget.json").then((res) => res.json()),
             },
+            {
+                path:'/faq',
+                element: <Faq></Faq>
+            }
         ],
     },
     {
