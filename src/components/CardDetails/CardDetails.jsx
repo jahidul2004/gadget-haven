@@ -1,6 +1,7 @@
 import { space } from "postcss/lib/list";
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+import { setCartData, setWishData } from "../../LocalData/LocalData";
 
 const CardDetails = () => {
     const allData = useLoaderData();
@@ -16,6 +17,14 @@ const CardDetails = () => {
     const hover = parseInt(data.rating);
     const rating = 0;
     const { id } = useParams();
+
+
+    const handleWish = () =>{
+        setWishData(data);
+    }
+    const handleCart = () =>{
+        setCartData(data);
+    }
     return (
         <div>
             <div className="bg-[#9538e1] p-10 text-center text-white pb-72 relative">
@@ -27,7 +36,7 @@ const CardDetails = () => {
                 </p>
             </div>
 
-            <div className="w-[60%] h-[420px] absolute top-[80%] bottom-[1%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 m-auto shadow-lg rounded-lg bg-white p-4 flex gap-4">
+            <div className="w-[60%] min-h-[420px] absolute top-[80%] bottom-[1%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 m-auto shadow-lg rounded-lg bg-white p-4 flex gap-4">
                 <div className="w-[35%] bg-[#f1f2f2] h-full rounded-lg">
                     <img className="w-full h-full" src={data.image} alt="" />
                 </div>
@@ -77,11 +86,11 @@ const CardDetails = () => {
                         </div>
                     </div>
                     <div className="flex gap-2">
-                        <button className="btn rounded-3xl bg-[#9538e1] text-white">
+                        <button onClick={handleCart} className="btn rounded-3xl bg-[#9538e1] text-white">
                             Add to Cart{" "}
                             <i className="fa-solid fa-cart-shopping"></i>
                         </button>
-                        <button className="btn rounded-full text-[#9538e1]">
+                        <button onClick={handleWish} className="btn rounded-full text-[#9538e1]">
                             <i class="fa-regular fa-heart text-lg"></i>
                         </button>
                     </div>

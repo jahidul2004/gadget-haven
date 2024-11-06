@@ -1,8 +1,21 @@
 import { Link, NavLink } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const NavBar = () => {
+
+    const location = useLocation();
+
+    const getNavbarColor = () => {
+      if (location.pathname === '/') return 'bg-[#9538e1] text-white';
+      if (location.pathname === '/statistics') return 'bg-white text-black';
+      if (location.pathname === '/dashboard') return 'bg-white text-black';
+      if (location.pathname === '/dashboard/cart') return 'bg-white text-black';
+      if (location.pathname === '/dashboard/wishlist') return 'bg-white text-black';
+      return 'bg-gray-500';
+    };
+
     return (
-        <div className="navbar bg-[#9538e1] text-white px-5">
+        <div className={`${getNavbarColor()} navbar px-5`}>
             <div className="navbar-start">
                 <div className="dropdown">
                     <div
@@ -30,28 +43,30 @@ const NavBar = () => {
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-black"
                     >
                         <li>
-                            <NavLink to='/home'>Home</NavLink>
+                            <NavLink to="/home">Home</NavLink>
                         </li>
                         <li>
-                            <NavLink to='/statistics'>Statistics</NavLink>
+                            <NavLink to="/statistics">Statistics</NavLink>
                         </li>
                         <li>
-                            <NavLink to='/dashboard'>Dashboard</NavLink>
+                            <NavLink to="/dashboard">Dashboard</NavLink>
                         </li>
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-3xl font-bold">Gadget Heaven</a>
+                <a className="btn btn-ghost text-3xl font-bold">
+                    Gadget Heaven
+                </a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     <li>
-                        <NavLink to='/'>Home</NavLink>
+                        <NavLink to="/">Home</NavLink>
                     </li>
                     <li>
-                        <NavLink to='/statistics'>Statistics</NavLink>
+                        <NavLink to="/statistics">Statistics</NavLink>
                     </li>
                     <li>
-                        <NavLink to='/dashboard'>Dashboard</NavLink>
+                        <NavLink to="/dashboard">Dashboard</NavLink>
                     </li>
                 </ul>
             </div>
@@ -61,9 +76,6 @@ const NavBar = () => {
                 </div>
                 <div className="indicator cursor-pointer">
                     <i class="w-9 h-9 text-xl fa-regular fa-heart flex items-center justify-center border rounded-full"></i>
-                    <span className="badge badge-sm indicator-item bg-transparent border-none text-white">
-                        16
-                    </span>
                 </div>
             </div>
         </div>

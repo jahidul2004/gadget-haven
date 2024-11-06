@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <div className="mt-32">
+        <div className="mt-40">
             {/* Footer area start from here */}
             <footer className="footer footer-center text-black p-10">
                 <aside>

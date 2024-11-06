@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Card from "../Card/Card";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
     const [data, setData] = useState([]);
@@ -30,6 +31,9 @@ const Home = () => {
 
     return (
         <div className="mt-32 px-10">
+            <Helmet>
+                <title>Home</title>
+            </Helmet>
             <h1 className="text-center text-4xl font-bold">
                 Explore Cutting-Edge Gadgets
             </h1>
