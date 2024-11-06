@@ -94,7 +94,9 @@ const CardDetails = () => {
                     </div>
                     <div className="flex gap-2">
                         <button
-                            onClick={handleCart}
+                            onClick={()=>{
+                                handleCart();
+                            }}
                             className="btn rounded-3xl bg-[#9538e1] text-white"
                         >
                             Add to Cart{" "}

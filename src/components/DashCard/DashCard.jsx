@@ -1,3 +1,5 @@
+import { notify } from "../../LocalData/LocalData";
+
 const DashCard = ({ data, onRemove }) => {
     const { image, title, price, description } = data;
     return (
@@ -12,7 +14,10 @@ const DashCard = ({ data, onRemove }) => {
             </div>
             <div className="mr-5">
                 <i
-                    onClick={onRemove}
+                    onClick={()=>{
+                        onRemove();
+                        notify("Item remove successfully!!");
+                    }}
                     className="text-3xl text-error cursor-pointer fa-regular fa-circle-xmark"
                 ></i>
             </div>

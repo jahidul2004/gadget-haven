@@ -12,6 +12,8 @@ import WishList from "./components/WishList/WishList";
 import Statistics from "./components/Statistics/Statistics";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
 import { HelmetProvider } from "react-helmet-async";
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const router = createBrowserRouter([
     {
@@ -62,6 +64,7 @@ createRoot(document.getElementById("root")).render(
     <StrictMode>
         <HelmetProvider>
             <RouterProvider router={router} />
+            <ToastContainer />
         </HelmetProvider>
     </StrictMode>
 );

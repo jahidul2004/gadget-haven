@@ -1,9 +1,14 @@
-// get all data from local storage
+import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+const notify = (message) => toast(message);
+
+// Get all data from local storage (wishlist)
 const getAllData = () => {
     const allData = localStorage.getItem("wishData");
-    if(allData){
-        const wishesData = JSON.parse(allData);
-        return wishesData;
+    if (allData) {
+        return JSON.parse(allData);
     } else {
         return [];
     }
@@ -15,11 +20,12 @@ const setWishData = (data) => {
     const isExist = wishData.find((item) => item.product_id === data.product_id);
 
     if (isExist) {
-        alert("Already added to wishlist");
+        notify("Item already added to wishlist!!");
         return;
     } else {
         wishData.push(data);
         localStorage.setItem("wishData", JSON.stringify(wishData));
+        notify("Item added to wishlist!");
     }
 };
 
@@ -27,8 +33,7 @@ const setWishData = (data) => {
 const getAllCartData = () => {
     const allData = localStorage.getItem("cartData");
     if (allData) {
-        const cartData = JSON.parse(allData);
-        return cartData;
+        return JSON.parse(allData);
     } else {
         return [];
     }
@@ -40,12 +45,13 @@ const setCartData = (data) => {
     const isExist = cartData.find((item) => item.product_id === data.product_id);
 
     if (isExist) {
-        alert("Already added to cart");
+        notify("Item already added to cart!!");
         return;
     } else {
         cartData.push(data);
-        localStorage.setItem("cartData", JSON.stringify(cartData)); // Save updated cart data to localStorage
+        localStorage.setItem("cartData", JSON.stringify(cartData));
+        notify("Item added to cart!!");
     }
 };
 
-export { setWishData, setCartData };
+export { setWishData, setCartData, notify };
