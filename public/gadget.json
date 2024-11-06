@@ -137,40 +137,6 @@
     },
     {
         "product_id": 9,
-        "title": "MacBook Pro 16",
-        "image": "https://i.ibb.co.com/rbC8bpW/apple-brand-macbook-photo-20.png",
-        "category": "Macbook",
-        "price": 2499.99,
-        "description": "Powerful MacBook Pro for professional users with high-end specifications.",
-        "specification": [
-            "16-inch Liquid Retina XDR display",
-            "1TB SSD storage",
-            "32GB RAM",
-            "M1 Max chip",
-            "Up to 21 hours of battery life"
-        ],
-        "availability": false,
-        "rating": 5.0
-    },
-    {
-        "product_id": 10,
-        "title": "MacBook Air 2020",
-        "image": "https://i.ibb.co.com/rbC8bpW/apple-brand-macbook-photo-20.png",
-        "category": "Macbook",
-        "price": 899.99,
-        "description": "Affordable MacBook Air model with good performance for basic tasks.",
-        "specification": [
-            "13.3-inch Retina display",
-            "128GB SSD storage",
-            "8GB RAM",
-            "Intel Core i3 processor",
-            "Up to 11 hours of battery life"
-        ],
-        "availability": true,
-        "rating": 4.3
-    },
-    {
-        "product_id": 11,
         "title": "Laptop UltraBook Z",
         "image": "https://i.ibb.co.com/rbC8bpW/apple-brand-macbook-photo-20.png",
         "category": "Laptop",
@@ -187,7 +153,7 @@
         "rating": 4.7
     },
     {
-        "product_id": 12,
+        "product_id": 10,
         "title": "Gaming Laptop G5",
         "image": "https://i.ibb.co.com/rbC8bpW/apple-brand-macbook-photo-20.png",
         "category": "Laptop",
@@ -202,56 +168,5 @@
         ],
         "availability": false,
         "rating": 4.8
-    },
-    {
-        "product_id": 13,
-        "title": "Business Laptop B Series",
-        "image": "https://i.ibb.co.com/rbC8bpW/apple-brand-macbook-photo-20.png",
-        "category": "Laptop",
-        "price": 849.99,
-        "description": "Reliable business laptop with solid performance and battery life.",
-        "specification": [
-            "14-inch Full HD display",
-            "256GB SSD storage",
-            "8GB RAM",
-            "Intel Core i5 processor",
-            "Up to 10 hours of battery life"
-        ],
-        "availability": true,
-        "rating": 4.2
-    },
-    {
-        "product_id": 14,
-        "title": "Convertible Laptop X2",
-        "image": "https://i.ibb.co.com/rbC8bpW/apple-brand-macbook-photo-20.png",
-        "category": "Laptop",
-        "price": 1299.99,
-        "description": "Versatile 2-in-1 laptop that functions as both a laptop and tablet.",
-        "specification": [
-            "13.5-inch touchscreen display",
-            "512GB SSD storage",
-            "16GB RAM",
-            "Intel Core i7 processor",
-            "Stylus support"
-        ],
-        "availability": true,
-        "rating": 4.5
-    },
-    {
-        "product_id": 15,
-        "title": "Laptop UltraBook Y",
-        "image": "https://i.ibb.co.com/rbC8bpW/apple-brand-macbook-photo-20.png",
-        "category": "Laptop",
-        "price": 1199.99,
-        "description": "High-quality ultrabook with fast performance and long battery life.",
-        "specification": [
-            "13.3-inch Full HD display",
-            "256GB SSD storage",
-            "8GB RAM",
-            "Intel Core i5 processor",
-            "Up to 15 hours of battery life"
-        ],
-        "availability": false,
-        "rating": 4.6
     }
 ]

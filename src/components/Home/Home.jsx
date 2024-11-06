@@ -51,14 +51,14 @@ const Home = () => {
                             All Products
                         </span>
                         <span
-                            onClick={() => handleCategory("Macbook")}
+                            onClick={() => handleCategory("Phone")}
                             className={` cursor-pointer text-[#0000009c] font-semibold p-4 rounded-3xl border border-[#9538e1] ${
-                                activeCategory === "Macbook"
+                                activeCategory === "Phone"
                                     ? "bg-[#9538e1] text-white"
                                     : ""
                             }`}
                         >
-                            Macbook
+                            Phone
                         </span>
                         <span
                             onClick={() => handleCategory("Laptop")}
@@ -71,14 +71,14 @@ const Home = () => {
                             Laptop
                         </span>
                         <span
-                            onClick={() => handleCategory("Phone")}
+                            onClick={() => handleCategory("Macbook")}
                             className={` cursor-pointer text-[#0000009c] font-semibold p-4 rounded-3xl border border-[#9538e1] ${
-                                activeCategory === "Phone"
+                                activeCategory === "Macbook"
                                     ? "bg-[#9538e1] text-white"
                                     : ""
                             }`}
                         >
-                            Phone
+                            Macbook
                         </span>
                     </div>
                 </div>
