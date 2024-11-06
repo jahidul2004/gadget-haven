@@ -16,11 +16,11 @@ import { HelmetProvider } from "react-helmet-async";
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <MainLayout></MainLayout>,
+        element: <MainLayout />,
         children: [
             {
                 path: "/",
-                element: <Header></Header>,
+                element: <Header />,
             },
             {
                 path: "/statistics",
@@ -33,28 +33,28 @@ const router = createBrowserRouter([
             },
             {
                 path: "/dashboard",
-                element: <Dashboard></Dashboard>,
+                element: <Dashboard />,
                 children: [
                     {
                         path: "/dashboard/cart",
-                        element: <Cart></Cart>,
+                        element: <Cart />,
                     },
                     {
                         path: "/dashboard/wishlist",
-                        element: <WishList></WishList>,
+                        element: <WishList />,
                     },
                 ],
             },
             {
                 path: "/product/:id",
                 element: <CardDetails />,
-                loader: () => fetch("public/gadget.json"),
+                loader: () => fetch("/gadget.json").then((res) => res.json()),
             },
         ],
     },
     {
         path: "*",
-        element: <ErrorPage></ErrorPage>,
+        element: <ErrorPage />,
     },
 ]);
 
