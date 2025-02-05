@@ -1,3 +1,6 @@
+![Repository Banner](https://i.ibb.co.com/Mx7LjY7B/Screenshot-49.png)
+
+
 # Gadget Haven
 
 Gadget Haven is an e-commerce platform designed to provide a seamless online shopping experience for tech enthusiasts. The website offers a wide range of gadgets, including phones, laptops, MacBooks, and other electronic devices. Users can browse through the latest products, add them to their cart, and make secure purchases.
