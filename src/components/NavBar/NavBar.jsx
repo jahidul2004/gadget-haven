@@ -79,10 +79,14 @@ const NavBar = () => {
             </div>
             <div className="navbar-end flex items-center">
                 <div className="mr-3 cursor-pointer">
-                    <i class="fa-solid border w-9 h-9 flex items-center justify-center rounded-full fa-cart-shopping text-xl"></i>
+                    <Link to="/dashboard/cart">
+                        <i class="fa-solid border w-9 h-9 flex items-center justify-center rounded-full fa-cart-shopping text-xl"></i>
+                    </Link>
                 </div>
                 <div className="indicator cursor-pointer">
-                    <i class="w-9 h-9 text-xl fa-regular fa-heart flex items-center justify-center border rounded-full"></i>
+                    <Link to={`/dashboard/wishlist`}>
+                        <i class="w-9 h-9 text-xl fa-regular fa-heart flex items-center justify-center border rounded-full"></i>
+                    </Link>
                 </div>
             </div>
         </div>
