@@ -4,9 +4,9 @@ const Card = ({ data }) => {
     const { product_id, title, image, price } = data;
 
     return (
-        <div className="border p-4 rounded-lg">
+        <div className="bg-[#f7f7f7] p-4 rounded-lg">
             <div className="w-full h-[200px] bg-[#dadce2] rounded-lg">
-                <img className="w-full h-full" src={image} alt={title} />
+                <img className="w-full h-full rounded-lg object-cover" src={image} alt={title} />
             </div>
             <div>
                 <h1 className="text-xl font-bold mt-3">{title}</h1>

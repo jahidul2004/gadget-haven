@@ -2,7 +2,7 @@
     {
         "product_id": 1,
         "title": "Smartphone XYZ Pro",
-        "image": "https://i.ibb.co.com/rbC8bpW/apple-brand-macbook-photo-20.png",
+        "image": "https://i.ibb.co.com/qLTZYXTt/google-pixel-9-pro-review-04.jpg",
         "category": "Phone",
         "price": 699.99,
         "description": "A powerful smartphone with advanced features and an ultra-clear display.",
@@ -19,7 +19,7 @@
     {
         "product_id": 2,
         "title": "Phone ABC Lite",
-        "image": "https://i.ibb.co.com/rbC8bpW/apple-brand-macbook-photo-20.png",
+        "image": "https://i.ibb.co.com/gFw0715m/arnel-hasanovic-4o-WSXde-AS2g-unsplash.jpg",
         "category": "Phone",
         "price": 399.99,
         "description": "Affordable smartphone with all the necessary features for everyday use.",
@@ -35,8 +35,8 @@
     },
     {
         "product_id": 3,
-        "title": "Smartphone Ultra 5G",
-        "image": "https://i.ibb.co.com/rbC8bpW/apple-brand-macbook-photo-20.png",
+        "title": "Samsung S25 Ultra 5G",
+        "image": "https://i.ibb.co.com/LzxD5YbZ/Samsung-Galaxy-S25-Ultra-Full-Space-Review-and-Price.webp",
         "category": "Phone",
         "price": 899.99,
         "description": "High-end smartphone with 5G connectivity and advanced performance.",
@@ -53,7 +53,7 @@
     {
         "product_id": 4,
         "title": "Phone M Series",
-        "image": "https://i.ibb.co.com/rbC8bpW/apple-brand-macbook-photo-20.png",
+        "image": "https://i.ibb.co.com/R4gNmhng/images.jpg",
         "category": "Phone",
         "price": 299.99,
         "description": "Compact smartphone with great features for budget-conscious users.",
@@ -70,7 +70,7 @@
     {
         "product_id": 5,
         "title": "Smartphone A1 Pro",
-        "image": "https://i.ibb.co.com/rbC8bpW/apple-brand-macbook-photo-20.png",
+        "image": "https://i.ibb.co.com/tp843dVY/images.jpg",
         "category": "Phone",
         "price": 749.99,
         "description": "A mid-range phone with a strong performance and stunning display.",
@@ -87,7 +87,7 @@
     {
         "product_id": 6,
         "title": "Phone Y10 Max",
-        "image": "https://i.ibb.co.com/rbC8bpW/apple-brand-macbook-photo-20.png",
+        "image": "https://i.ibb.co.com/Y4GqGm5D/images.jpg",
         "category": "Phone",
         "price": 649.99,
         "description": "A large-screen phone perfect for media consumption and gaming.",
@@ -104,7 +104,7 @@
     {
         "product_id": 7,
         "title": "MacBook Air 2023",
-        "image": "https://i.ibb.co.com/rbC8bpW/apple-brand-macbook-photo-20.png",
+        "image": "https://i.ibb.co.com/twjWZ8L3/download.jpg",
         "category": "Macbook",
         "price": 999.99,
         "description": "Lightweight and powerful MacBook Air with M1 chip, perfect for everyday tasks.",
@@ -138,7 +138,7 @@
     {
         "product_id": 9,
         "title": "Laptop UltraBook Z",
-        "image": "https://i.ibb.co.com/rbC8bpW/apple-brand-macbook-photo-20.png",
+        "image": "https://i.ibb.co.com/F4HjdsyD/images.jpg",
         "category": "Laptop",
         "price": 1099.99,
         "description": "Slim and powerful ultrabook for professionals with great battery life.",
@@ -155,7 +155,7 @@
     {
         "product_id": 10,
         "title": "Gaming Laptop G5",
-        "image": "https://i.ibb.co.com/rbC8bpW/apple-brand-macbook-photo-20.png",
+        "image": "https://i.ibb.co.com/1YhbbMC3/download.jpg",
         "category": "Laptop",
         "price": 1599.99,
         "description": "High-performance gaming laptop with powerful graphics card.",
